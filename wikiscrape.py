@@ -22,7 +22,7 @@ for tr in only_table.findAll('tr'):
     # We'll store all of the values for each given row in a list
     output_tds = []
     for td in tds:
-        output_tds.append(td.text.encode('utf-8').strip()) # Delete annoying tab character
+        output_tds.append(td.text.encode('utf-8').strip()) # encoding
 
     # And we'll add that list to our broader list of results
     output_trs.append(output_tds)
